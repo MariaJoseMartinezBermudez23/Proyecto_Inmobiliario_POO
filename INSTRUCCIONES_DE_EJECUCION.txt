@@ -1,0 +1,23 @@
+REQUISITOS
+- SDK .NET 10 instalado.
+- Visual Studio 2026 o una versión compatible con .NET 10, con la carga de trabajo ASP.NET y desarrollo web.
+
+ABRIR
+1. Extraiga el ZIP completo en una carpeta local.
+2. Abra DemoAPIPOO2026-2.sln.
+3. Espere la restauración de paquetes NuGet.
+4. Seleccione el proyecto DemoAPIPOO2026-2 como proyecto de inicio.
+5. Seleccione el perfil http y ejecute.
+6. Swagger debe abrir en http://localhost:5101/swagger.
+
+USUARIOS DE DEMOSTRACION
+- admin / Admin123* (Administrador)
+- consulta / Consulta123* (Consulta)
+En Swagger, ejecute POST /api/Autenticacion/login. Copie el JWT y péguelo en Authorize sin escribir la palabra Bearer.
+
+PRUEBAS
+Desde la carpeta donde está DemoAPIPOO2026-2.sln ejecute:
+  dotnet test
+
+IMPORTANTE
+El proyecto usa almacenamiento en memoria. Los cambios se pierden al detener o reiniciar la API. Las credenciales y clave JWT son únicamente para desarrollo local, no para producción.
